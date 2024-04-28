@@ -35,11 +35,11 @@ for (let i = 0; i < studentScores.length; i++) {
   console.log(`\u{1F51B} New pass through the array: ${i}`);
   for (let j = 0; j < studentScores.length - i - 1; j++) {
     console.log(
-      `\u{1F50D} Comparing: ${studentScores[j].name} (${studentScores[j].score}) <-> ${
-        studentScores[j + 1].name
-      } (${studentScores[j + 1].score})`
+      `\u{1F50D} Comparing: ${studentScores[j].name} (${
+        studentScores[j].score
+      }) <-> ${studentScores[j + 1].name} (${studentScores[j + 1].score})`
     );
-    console.log(`📋 Array state:`);
+    console.log(`\u{1F4CB} Array state:`);
     console.table(studentScores);
     if (studentScores[j].score < studentScores[j + 1].score) {
       let temp = studentScores[j];
@@ -47,7 +47,7 @@ for (let i = 0; i < studentScores.length; i++) {
       studentScores[j + 1] = temp;
       isSwapped = true;
     }
-    console.log(`\u{1F4A1} After iteration ${j}:`);
+    console.log(`\u{1F4DD} After iteration ${j}:`);
     console.table(studentScores);
   }
   if (!isSwapped) {
