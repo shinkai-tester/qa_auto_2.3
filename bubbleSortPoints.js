@@ -35,7 +35,7 @@ for (let i = 0; i < studentScores.length; i++) {
   console.log(`\u{1F51B} New pass through the array: ${i}`);
   for (let j = 0; j < studentScores.length - i - 1; j++) {
     console.log(
-      `🔍 Comparing: ${studentScores[j].name} (${studentScores[j].score}) <-> ${
+      `\u{1F50D} Comparing: ${studentScores[j].name} (${studentScores[j].score}) <-> ${
         studentScores[j + 1].name
       } (${studentScores[j + 1].score})`
     );
